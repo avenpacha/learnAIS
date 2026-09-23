@@ -1,65 +1,62 @@
 
-# learnAIS: Artificial Immune Systems Learning Website
+# learnAIS
 
-## Project Overview
-
-learnAIS is an interactive educational website I developed as
-a graduate computer science course project. The website
-introduces Artificial Immune Systems (AIS) and explores
-how biological immune system processes inspire computational
-algorithms.
-
-The project is designed to help computer science and IT
-students understand the fundamentals of AIS through
-instructional content, visual explanations, real-world
-applications, and an interactive demonstration.
-
-## Features
-
-- Multi-page educational website
-- Introduction to Artificial Immune Systems
-- Explanation of the Clonal Selection Algorithm (CSA)
-- Examples of AIS applications in computing
-- Interactive demonstration of mutation rate, cloning rate,
-  and selection pressure
-- Responsive layouts for different screen sizes
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
-
-## Interactive Demo
-
-The interactive demonstration allows users to adjust
-three parameters associated with the Clonal Selection
-Algorithm: mutation rate, cloning rate, and selection
-pressure.
-
-JavaScript updates the displayed graphs and explanations
-based on the user's selections.
-
-The graphs represent illustrative scenarios rather than
-the results of a real-time algorithm execution.
-
-## Project Purpose
-
-This project combines my interests in computer science,
-educational technology, and front-end web development.
-
-Through its development, I gained experience organizing
-educational content, designing a multi-page website,
-implementing responsive layouts, and using JavaScript
-to create interactive learning experiences.
+An interactive educational website introducing Artificial
+Immune Systems (AIS) and bio-inspired computing.
 
 ## Live Website
 
-[Explore the learnAIS website](https://avenpacha.github.io/learnAIS/)
+https://avenpacha.github.io/learnAIS/
 
-## Developer
+## About the Project
 
-Aven Pacha
+learnAIS was developed as an individual academic project
+for CS630 — Human-Computer Interaction.
 
-[Professional Portfolio](https://avenpacha.github.io/)
+I followed a user-centered design process, beginning with
+audience research and interface concepts and progressing
+through prototyping, usability testing, design revisions,
+and front-end implementation.
+
+## UX Design Process
+
+- Identified target users and developed user personas.
+- Explored three low-fidelity interface concepts.
+- Created interactive mid-fidelity prototypes in Canva.
+- Conducted usability testing with four participants.
+- Revised the navigation based on recurring user feedback.
+- Developed the finished website using HTML, CSS, and JavaScript.
+
+## Usability Testing and Design Iteration
+
+During testing of the initial mid-fidelity prototype,
+all four participants requested a clearer understanding
+of the course structure or their progress.
+
+In response, I added an About the Course page and
+updated the Start the Course button to open that
+overview before the first lesson.
+
+I also changed the button to navy blue to make
+the main starting point more visually prominent.
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Canva
+- Visual Studio Code
+- GitHub Pages
+
+## Portfolio Case Study
+
+For a detailed overview of the project, including
+low-fidelity wireframes, usability testing, design
+revisions, and an embedded prototype walkthrough, visit:
+
+https://avenpacha.github.io/projects/learnais-ux-case-study.html
+
+## Design Walkthrough
+
+https://www.youtube.com/watch?v=xM8_Xs0dGSY
