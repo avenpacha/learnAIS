@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>learnAIS.com – Interactive Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       NAVIGATION BAR  (same as all other pages)
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-the-course.html">About the Course</a></li>
+        <li><a href="what-is-ais.html">What Is AIS?</a></li>
+        <li><a href="how-csa-works.html">How CSA Works</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="interactive-demo.html" class="active">Interactive Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       HEADER / PAGE TITLE
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Lesson 4: Interactive Demo</h1>
+      <hr class="title-underline" />
+    </div>
+  </header>
+
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       MAIN CONTENT
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <main class="container">
+    <!-- Introductory paragraph -->
+    
+    <p>
+      Explore how mutation rate, cloning rate, and selection pressure
+      influence the behavior of the Clonal Selection Algorithm (CSA).
+      Use the sliders below to compare illustrative performance
+      scenarios and learn how each parameter can affect the
+      algorithm's ability to find high-quality solutions.
+    </p>
+
+    <!-- TRY THIS! block -->
+    <div class="section-backdrop">
+      <div class="try-this">
+        <strong>TRY THIS!</strong>
+        <ol>
+          <li>Start with a low mutation rate and see how the system behaves.</li>
+          <li>Increase the mutation rate and observe any changes in finding better solutions.</li>
+          <li>Test how high or low selection pressure affects the speed of finding optimal solutions.</li>
+        </ol>
+      </div>
+    </div>
+
+  <div class="content-grid">
+    <!-- ROW 1, COL 1: Mutation Rate -->
+    <div class="item--intro">
+      <h2>Mutation Rate</h2>
+      <p>
+        Move this slider to change how much variation is introduced in each cycle.
+        Higher mutation rates mean more diversity in the system.
+      </p>
+          <input
+            type="range"
+            id="mutation-slider"
+            class="slider"
+            min="1"
+            max="3"
+            step="1"
+            value="1"
+          />
+    </div>
+     
+     <!-- ROW 1, COL 2: Mutation Graph -->
+    <div class="item--infographic1">
+      <div class="infographic-image">
+            <img
+              id="mutation-graph"
+              src="images/mutation-low.png"
+              alt="Mutation Rate Graph"
+            />
+          </div>
+          <div class="info-box">
+            <p id="mutation-text">
+              <strong>Low Mutation Rate:</strong> With a low mutation rate, the system changes only slightly each cycle. This leads to slow and steady improvement, as small tweaks are tested over time. There’s less chance of exploring new, unexpected solutions.
+            </p>
+        </div>
+        </div>
+
+      <!-- ROW 2, COL 1: Cloning Rate -->
+    <div class="item--features">
+      <h2>Cloning Rate</h2>
+      <p>
+            Adjust this slider to decide how many copies are made of the best solutions.
+            More clones can speed up finding better answers.
+          </p>
+          <input
+            type="range"
+            id="cloning-slider"
+            class="slider"
+            min="1"
+            max="3"
+            step="1"
+            value="1"
+          />
+        </div>
+
+    <!-- ROW 2, COL 2: Cloning Graph -->
+    <div class="item--infographic2">
+      <div class="infographic-image">
+            <img
+              id="cloning-graph"
+              src="images/cloning-low.png"
+              alt="Cloning Rate Graph"
+            />
+          </div>
+          <div class="info-box">
+            <p id="cloning-text">
+              <strong>Low Cloning Rate:</strong> With a low cloning rate, fewer copies of high-performing solutions are made each cycle. This leads to slow improvement, as the system tests only a small number of variations at a time.
+            </p>
+          </div>
+          </div>
+
+      <!-- ROW 3, COL 1: Selection -->
+    <div class="item--bio">
+      <h2>Selection Pressure</h2>
+      <p>
+        Use this slider to control how strict the system is in keeping only the best solutions.
+        Higher pressure focuses on top performers!
+      </p>
+      <input
+            type="range"
+            id="selection-slider"
+            class="slider"
+            min="1"
+            max="3"
+            step="1"
+            value="1"
+          />
+        </div>   
+
+    <!-- ROW 3, COL 2: Selection Graph -->
+    <div class="item--infographic3">
+      <div class="infographic-image">
+        <img
+              id="selection-graph"
+              src="images/selection-low.png"
+              alt="Selection Pressure Graph"
+            />
+          </div>
+          <div class="info-box">
+            <p id="selection-text">
+              <strong>Low Selection Pressure:</strong> With low selection pressure, the system is less strict about keeping only the best solutions. This results in gradual improvement, as the system explores a broader range of possibilities over time.
+            </p>
+    </div>
+  </div>
+  </div>
+
+
+    <!-- RESULTS block -->
+    <div class="section-backdrop">
+      <h2>RESULTS OF YOUR ADJUSTMENTS</h2>
+      <p>
+        As you adjust the sliders, notice how the performance graphs below change.
+        This simulates how CSA—like the immune system—can balance exploration (trying new solutions) and exploitation (keeping the best ones) to adapt over time.
+      </p>
+    </div>
+
+    <!-- REFLECTION block -->
+    <div class="section-backdrop">
+      <h2>REFLECTION QUESTION</h2>
+      <p>
+        What do you notice about how different parameter combinations impact the system’s ability to find high-quality solutions?
+      </p>
+    </div>
+
+    <!-- CONCLUSIONS block -->
+    <div class="section-backdrop">
+      <h2>CONCLUSIONS</h2>
+      <p>
+        Just like the immune system fine-tunes its defenses against pathogens, CSA adapts to solve complex problems through mutation, cloning, and selection. Explore, experiment,
+        and see how this bio-inspired approach can improve performance!
+      </p>
+    </div>
+  </main>
+
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       INTERACTIVE JAVASCRIPT
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <script>
+    // --- Mutation Rate Slider Handler ---
+    const mutationSlider = document.getElementById('mutation-slider');
+    const mutationGraph = document.getElementById('mutation-graph');
+    const mutationText = document.getElementById('mutation-text');
+
+    mutationSlider.addEventListener('input', () => {
+      const value = mutationSlider.value;
+      switch (value) {
+        case '1':
+          mutationGraph.src = 'images/mutation-low.png';
+          mutationGraph.alt = 'Low Mutation Rate Graph';
+          mutationText.innerHTML = '<strong>Low Mutation Rate:</strong> With a low mutation rate, the system changes only slightly each cycle. This leads to slow and steady improvement, as small tweaks are tested over time. There’s less chance of exploring new, unexpected solutions.';
+          break;
+        case '2':
+          mutationGraph.src = 'images/mutation-medium.png';
+          mutationGraph.alt = 'Medium Mutation Rate Graph';
+          mutationText.innerHTML = '<strong>Medium Mutation Rate:</strong> At a medium mutation rate, the system introduces moderate variation. This strikes a balance: new ideas are tested, but there’s still some stability in high-performing solutions. This often leads to faster adaptation and better performance.';
+          break;
+        case '3':
+          mutationGraph.src = 'images/mutation-high.png';
+          mutationGraph.alt = 'High Mutation Rate Graph';
+          mutationText.innerHTML = '<strong>High Mutation Rate:</strong> A high mutation rate means lots of changes each cycle! While this can quickly explore new possibilities, it can also lead to instability or forgetting what worked well before. Performance might fluctuate more as the system experiments widely.';
+          break;
+      }
+    });
+
+    // --- Cloning Rate Slider Handler ---
+    const cloningSlider = document.getElementById('cloning-slider');
+    const cloningGraph = document.getElementById('cloning-graph');
+    const cloningText = document.getElementById('cloning-text');
+
+    cloningSlider.addEventListener('input', () => {
+      const value = cloningSlider.value;
+      switch (value) {
+        case '1':
+          cloningGraph.src = 'images/cloning-low.png';
+          cloningGraph.alt = 'Low Cloning Rate Graph';
+          cloningText.innerHTML = '<strong>Low Cloning Rate:</strong> With a low cloning rate, fewer copies of high-performing solutions are made each cycle. This leads to slow improvement, as the system tests only a small number of variations at a time.';
+          break;
+        case '2':
+          cloningGraph.src = 'images/cloning-medium.png';
+          cloningGraph.alt = 'Medium Cloning Rate Graph';
+          cloningText.innerHTML = '<strong>Medium Cloning Rate:</strong> A medium cloning rate means the system creates a balanced number of clones for each high-performing solution. This allows it to explore new ideas while still building on proven successes—leading to steady, balanced improvement.';
+          break;
+        case '3':
+          cloningGraph.src = 'images/cloning-high.png';
+          cloningGraph.alt = 'High Cloning Rate Graph';
+          cloningText.innerHTML = '<strong>High Cloning Rate:</strong> A high cloning rate means the system focuses heavily on the best solutions, making many copies of them. This accelerates the process of finding better answers, leading to faster improvement.';
+          break;
+      }
+    });
+
+    // --- Selection Pressure Slider Handler ---
+    const selectionSlider = document.getElementById('selection-slider');
+    const selectionGraph = document.getElementById('selection-graph');
+    const selectionText = document.getElementById('selection-text');
+
+    selectionSlider.addEventListener('input', () => {
+      const value = selectionSlider.value;
+      switch (value) {
+        case '1':
+          selectionGraph.src = 'images/selection-low.png';
+          selectionGraph.alt = 'Low Selection Pressure Graph';
+          selectionText.innerHTML = '<strong>Low Selection Pressure:</strong> With low selection pressure, the system is less strict about keeping only the best solutions. This results in gradual improvement, as the system explores a broader range of possibilities over time.';
+          break;
+        case '2':
+          selectionGraph.src = 'images/selection-medium.png';
+          selectionGraph.alt = 'Medium Selection Pressure Graph';
+          selectionText.innerHTML = '<strong>Medium Selection Pressure:</strong> At medium selection pressure, the system keeps a balanced focus on the best solutions while still allowing some diversity. This leads to steady, balanced improvement as it carefully hones in on the strongest solutions.';
+          break;
+        case '3':
+          selectionGraph.src = 'images/selection-high.png';
+          selectionGraph.alt = 'High Selection Pressure Graph';
+          selectionText.innerHTML = '<strong>High Selection Pressure:</strong> A high selection pressure means the system is very selective, focusing almost entirely on the top-performing solutions. This leads to rapid improvement, as the system quickly refines and strengthens the best ideas.';
+          break;
+      }
+    });
+  </script>
+
+ <!-- ─────────────────────────────────────────────────────────────────────────── 
+       FOOTER  (same as all other pages)
+  ─────────────────────────────────────────────────────────────────────────── -->
+ <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo-block">
+        <span class="footer-logo-text">learnAIS.com</span>
+        <p class="footer-tagline">AN INTRODUCTION TO AIS AND BIO-INSPIRED COMPUTING</p>
+      </div>
+      <div class="footer-quicklinks">
+        <h3>QUICK LINKS</h3>
+        <ul>
+         <li><a href="index.html">HOME</a></li> 
+         <li><a href="about-the-course.html">ABOUT THE COURSE</a></li>
+          <li><a href="what-is-ais.html">WHAT IS AIS?</a></li>
+          <li><a href="how-csa-works.html">HOW CSA WORKS</a></li>
+          <li><a href="applications.html">APPLICATIONS</a></li>
+          <li><a href="interactive-demo.html">INTERACTIVE DEMO</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>ABOUT THIS PROJECT</h3>
+
+        <p>
+          An educational website developed as a
+          graduate computer science course project.
+        </p>
+
+        <p>
+          <a href="https://avenpacha.github.io/">
+            View Developer Portfolio
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+</body>
+</html>

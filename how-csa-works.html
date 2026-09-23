@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>learnAIS.com – How CSA Works</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       NAVIGATION BAR
+       same as all other pages
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-the-course.html">About the Course</a></li>
+        <li><a href="what-is-ais.html">What Is AIS?</a></li>
+        <li><a href="how-csa-works.html" class="active">How CSA Works</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="interactive-demo.html">Interactive Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- ───────────────────────────────────────────────────────────────────────────
+       MAIN CONTENT
+  ─────────────────────────────────────────────────────────────────────────── -->
+  
+  
+   <!-- ======================
+       HEADER / PAGE TITLE
+       ====================== -->
+
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Lesson 2: How CSA Works</h1>
+      <hr class="title-underline" />
+    </div>
+  </header>
+
+    <!-- ======================
+       MAIN CONTENT AREA
+       ====================== -->
+   <main class="container">
+  <div class="content-grid">
+           <!-- ROW 1, COL 1: FIRST TWO PARAGRAPHS -->
+      <div class="item--intro">
+        <!-- Clonal Selection Theory -->
+          <h2>Clonal Selection Theory</h2>
+          <p>
+            The Clonal Selection Algorithm (CSA) is a computational model based on the 
+            clonal selection theory of acquired immunity. This theory explains how B and 
+            T lymphocytes improve their response to antigens over time through processes 
+            like affinity maturation. In computational terms, this theory inspires algorithms 
+            that identify high-quality solutions and refine them iteratively to adapt to new 
+            challenges.
+            <br />
+            <em>(Source: Wikipedia contributors, 2023)</em>
+          </p>
+          <br />
+          <br />
+          <h2>How CSA Adapts and Learns</h2>
+          <ul>
+            <li><strong>Selection:</strong> Identifying candidate solutions (antibodies) with high affinity to the problem (antigen).</li>
+            <li><strong>Cloning:</strong> Replicating these high-affinity solutions.</li>
+            <li><strong>Mutation:</strong> Introducing variations to the clones to explore new solutions.</li>
+            <li><strong>Replacement:</strong> Substituting low-affinity solutions with improved ones.</li>
+          </ul>
+          <p>
+            This cyclical process allows the system to adapt and optimize solutions over time, similar to how the immune system evolves to combat pathogens.
+            <br />
+            <em>(Source: Wikipedia contributors, 2023)</em>
+          </p>
+        </div>
+
+        <!-- ROW 1, COL 2: Infographic 1 -->
+      <div class="item--infographic1">
+         <h3>Infographic 1: Clonal Selection Algorithm Process</h3>
+      <div class="infographic-image">
+        <img
+          src="images/Image-how-csa-works-A.png"
+          alt="Infographic: Clonal Selection Algorithm Process" />
+        </div>
+        <p class="infographic-caption">
+          This infographic illustrates biological mutation types—point mutations, insertions, deletions, substitutions, and inversions—which introduce genetic diversity within populations. Similarly, the CSA uses mutation and selection to introduce variety and refine high-performing clones, mimicking how the immune system adapts and improves its antibody responses over time.
+        </p>
+      </div>
+
+        <!-- ROW 2, COL 1: LAST TWO PARAGRAPHS -->
+         <div class="item--features">
+          <h2>Mutation and Selection</h2>
+          <p>
+            Mutation and selection are critical for ensuring diversity and refining potential solutions in CSA.
+          </p>
+          <ul>
+            <li><strong>Mutation:</strong> Slight modifications in cloned solutions introduce variety, preventing stagnation and helping the algorithm explore a wider range of possibilities.</li>
+            <li><strong>Selection:</strong> After mutation, the system selects the highest-performing clones, ensuring only the most effective solutions continue to the next iteration.</li>
+          </ul>
+          <p>
+            This iterative adaptation mimics how the immune system fine-tunes its antibodies to better recognize and neutralize pathogens.
+            <br />
+            <em>(Source: Wikipedia contributors, 2023)</em>
+          </p>
+        <br />
+        <br />
+        <h2>Comparison to Other Bio-Inspired Algorithms</h2>
+          <p>
+            While CSA shares similarities with other bio-inspired algorithms like Genetic Algorithms (GA) and Ant Colony Optimization (ACO), it has unique features:
+          </p>
+          <ul>
+            <li>Unlike GA, CSA’s cloning and mutation are more directly modeled after the immune system’s biological processes.</li>
+            <li>Unlike ACO, which relies on pheromone trails and collective intelligence, CSA uses an individual learning mechanism inspired by lymphocyte affinity maturation.</li>
+          </ul>
+          <p>
+            These differences make CSA particularly suited for tasks that require robust anomaly detection and adaptive optimization, such as network security or data clustering.
+            <br />
+            <em>(Source: algorithmafternoon.com; DataCamp, 2023)</em>
+          </p>
+      </div>
+
+      <!-- ROW 2, COL 2: Infographic 2 -->
+    <div class="item--infographic2">
+      <h3>Infographic 2: Innate vs. Adaptive Immunity</h3>
+      <div class="infographic-image">
+        <img
+          src="images/Image-how-csa-works-B.png"
+          alt="Illustration of biological mutations"
+        />
+      </div>
+      <p class="infographic-caption">
+        The division between innate and adaptive immunity mirrors how AIS
+        algorithms balance fast initial responses (like innate immunity) with
+        ongoing learning and adaptation (like adaptive immunity) to improve
+        performance over time.
+      </p>
+    </div>
+    </div>
+
+
+
+    <!-- LESSON NAVIGATION / FORWARD BUTTON -->
+    <div class="forward-button-container">
+      <a href="applications.html" class="btn-forward">
+        LESSON 3: APPLICATIONS &#x00BB;&#x00BB;&#x00BB;
+      </a>
+    </div>
+  </main>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────── 
+       FOOTER
+       same as all other pages
+  ─────────────────────────────────────────────────────────────────────────── -->
+   <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo-block">
+        <span class="footer-logo-text">learnAIS.com</span>
+        <p class="footer-tagline">AN INTRODUCTION TO AIS AND BIO-INSPIRED COMPUTING</p>
+      </div>
+      <div class="footer-quicklinks">
+        <h3>QUICK LINKS</h3>
+        <ul>
+         <li><a href="index.html">HOME</a></li> 
+         <li><a href="about-the-course.html">ABOUT THE COURSE</a></li>
+          <li><a href="what-is-ais.html">WHAT IS AIS?</a></li>
+          <li><a href="how-csa-works.html">HOW CSA WORKS</a></li>
+          <li><a href="applications.html">APPLICATIONS</a></li>
+          <li><a href="interactive-demo.html">INTERACTIVE DEMO</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>ABOUT THIS PROJECT</h3>
+
+        <p>
+          An educational website developed as a
+          graduate computer science course project.
+        </p>
+
+        <p>
+          <a href="https://avenpacha.github.io/">
+            View Developer Portfolio
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+</body>
+</html>

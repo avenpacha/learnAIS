@@ -1,0 +1,646 @@
+/* ==========================================================================
+   Global Reset + Base Styles
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px; 
+  line-height: 1.5;
+  color: #001f3f; /* Dark navy for body text */
+}
+
+body {
+  background-color: #E2F0FB; /* Light blue background */
+}
+
+/* -------------------------------------------------------------------
+   CONTENT CONTAINER 
+   ------------------------------------------------------------------- */
+.container {
+  max-width: 1324px;        
+  margin: 2rem auto;        
+  padding: 0 1rem;          
+}
+
+.container .inner {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+}
+
+
+
+/* ==========================================================================
+   TYPOGRAPHY + SIZING
+   ========================================================================== */
+h1, h2, h3 {
+  color: #0A1F44; /* Very dark navy */
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.75rem; /* 28px */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+  margin-bottom: 0.5rem;
+}
+
+p, li {
+  font-size: 1.25rem; /* 20px */
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #0A1F44; 
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR (SITE-HEADER)
+   ========================================================================== */
+.site-header {
+  background-color: #ffffff; /* White nav background */
+  border-bottom: 1px solid #CCCCCC;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+}
+
+.nav-list li a {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  color: #0A1F44;
+  transition: color 0.2s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+  color: #0074D9; /* bright blue on hover */
+}
+
+.nav-list li a.active {
+  color: #0074D9;
+  border-bottom: 2px solid #0074D9;
+  padding-bottom: 0.25rem;
+}
+
+/* ===================================
+   HOME PAGE HERO SECTION (LEFT + RIGHT)
+==================================== */
+
+/* HERO CONTAINER */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 4rem 1rem; 
+  flex: 1 0 auto;
+  margin: 0 auto;
+  min-height: calc(100vh - 72px); 
+  
+}
+
+/* HERO LEFT */
+.hero-left {
+  flex: 1 1 400px;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* HERO RIGHT */
+.hero-right {
+  flex: 1 1 400px;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-right .text-block {
+  width: 100%;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+.hero-right h2 {
+  line-height: normal;
+  font-size: 2.5rem; /* 40px */
+  color: #001f3f;
+  margin-bottom: 0.5rem;
+}
+.hero-right h3 {
+  color: #001f3f;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* PRIMARY BUTTON IN HERO */
+.start-course-wrapper {
+  width: 100%;
+  margin: 2rem 0;
+}
+.btn-primary {
+  display: inline-block;
+  background-color: #001f3f;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 1.25rem 0; /* top/bottom 16px */
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%; 
+  text-align: center;
+}
+.btn-primary:hover {
+  background-color: #007bff;
+}
+
+/* SECONDARY BUTTON GRID */
+.secondary-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; 
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: #001f3f;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  padding: 1rem 2rem; 
+  border-radius: 25px;
+  border: 2px solid #001f3f;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-align: center;
+  width: 100%; 
+}
+.btn-secondary:hover {
+  background-color: #001f3f;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   ABOUT PAGE MAIN CONTENT AREA
+   ========================================================================== */
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 72px); 
+}
+
+.hero-section {
+  background-color: #E2F0FB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem; 
+  flex: 1 0 auto;
+}
+
+.hero-single-col {
+  max-width: 800px;
+  width: 100%;
+}
+
+.page-title {
+  font-size: 2.5rem; /* 40px */
+  color: #0A1F44;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.title-divider {
+  width: 80%;
+  height: 2px;
+  background-color: #0A1F44;
+  border: none;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-bold {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-list {
+  list-style: disc inside;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course-list li {
+  margin-bottom: 0.5rem;
+}
+
+.tip {
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   WHAT IS AIS MAIN CONTENT AREA
+   ========================================================================== */
+
+/* ======================
+   TWO-COLUMN GRID LAYOUT
+   ====================== */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns by default */
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+
+.item--intro        { grid-column: 1; grid-row: 1; }
+.item--infographic1 { grid-column: 2; grid-row: 1; }
+
+.item--features     { grid-column: 1; grid-row: 2; }
+.item--infographic2 { grid-column: 2; grid-row: 2; }
+
+.item--bio          { grid-column: 1; grid-row: 3; }
+.item--infographic3 { grid-column: 2; grid-row: 3; }
+
+.infographic-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+
+/* ========================================================
+   COLLAPSE “.content-grid” INTO A SINGLE COLUMN ON MOBILE
+   ======================================================== */
+@media (max-width: 768px) {
+  /* 1) Force the container itself to become one column */
+  .content-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .content-grid [class*="item--"] {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+/* ==========================================================================
+   Applications Main Content Area
+   ========================================================================== */
+ .section-backdrop {
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-backdrop .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-backdrop .left-col,
+.section-backdrop .right-col {
+  flex: 1;
+  min-width: 280px;
+  padding: 0 1rem;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Responsive: collapse to single column on narrow viewports
+   ─────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .grid-row {
+    grid-template-columns: 1fr;   /* switch to a single column */
+    row-gap: 1.5rem;              /* add some vertical gap when stacked */
+  }
+}
+
+
+/* ==========================================================================
+   FORWARD BUTTONS 
+   (to move to the next lesson)
+   ========================================================================== */
+
+/* Forward button */
+.forward-button-container {
+  display: flex;
+  justify-content: center; /* center contents horizontally */
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.btn-forward {
+  background-color: #ffffff;
+  color: #001f3f;
+  font-size: 1rem;       /* 16px */
+  font-weight: 600;
+  padding: 1rem 2rem;    
+  border-radius: 25px;
+  border: 2px solid #001f3f;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  /* Span the full width of the parent flex container */
+  width: 100%;
+  max-width: 400px;     
+  text-align: center;
+}
+
+.btn-forward:hover,
+.btn-forward:focus {
+  background-color: #005bb5; /* darker blue */
+  color: #ffffff;           /* make text white on hover for contrast */
+}
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background-color: #0A1F44;
+  color: #FFFFFF;
+  padding: 2.75rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.footer-logo-block {
+  padding-right: 2rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+.footer-logo-text {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #FFFFFF;
+  max-width: 260px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-quicklinks h3,
+.footer-project h3 {
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.footer-quicklinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-quicklinks ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-quicklinks ul li a {
+  color: #FFFFFF;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-quicklinks ul li a:hover,
+.footer-quicklinks ul li a:focus {
+  text-decoration: underline;
+}
+
+.footer-project-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  max-width: 320px;
+}
+
+.footer-portfolio-link {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.1rem;
+}
+
+.footer-portfolio-link:hover,
+.footer-portfolio-link:focus {
+  border-bottom-color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   FOOTER RESPONSIVE
+   ========================================================================== */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    text-align: left;
+  }
+
+  .footer-logo-block {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer-tagline,
+  .footer-project-text {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVE)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section {
+    padding: 2.5rem 1rem;
+  }
+  .title-divider {
+    width: 100%;
+  }
+
+  .hero-single-col {
+    padding: 0 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.375rem; /* 22px */
+  }
+
+  .course-list {
+    margin-left: 1.5rem;
+  }
+
+  .btn-forward {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.125rem; /* 18px */
+  }
+
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 2rem; /* 32px */
+  }
+  .h1, .h2, .h3 {
+    text-align: center;
+  }
+  .hero-copy p,
+  .tip {
+    font-size: 1.125rem; /* 18px */
+  }
+  .course-list {
+    margin-left: 1rem;
+  }
+  .footer-logo-text {
+    font-size: 1.25rem; /* 20px */
+  }
+  .footer-tagline {
+    font-size: 0.9rem; /* 14.4px */
+  }
+}
+
+/* ======================================
+   RESPONSIVE ADJUSTMENTS (below 768px)
+======================================= */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem; /* 24px */
+    min-height: auto; /* allow content to shrink on very small screens */
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right h2 {
+    font-size: 2rem; /* 32px */
+  }
+  .hero-right h3 {
+    font-size: 1.125rem; /* 18px */
+  }
+  .hero-copy p {
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-column {
+    text-align: center;
+    max-width: none;
+  }
+
+}
+
+/* Ensure all footer headings and links are visible */
+
+.site-footer h3,
+.site-footer a {
+  color: #FFFFFF;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
+}

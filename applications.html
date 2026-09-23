@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>learnAIS.com – Applications</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       NAVIGATION BAR  (same as all other pages)
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-the-course.html">About the Course</a></li>
+        <li><a href="what-is-ais.html">What Is AIS?</a></li>
+        <li><a href="how-csa-works.html">How CSA Works</a></li>
+        <li><a href="applications.html" class="active">Applications</a></li>
+        <li><a href="interactive-demo.html">Interactive Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       HEADER / PAGE TITLE
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Lesson 3: Applications of AIS</h1>
+      <hr class="title-underline" />
+    </div>
+  </header>
+
+  <!-- ───────────────────────────────────────────────────────────────────────────
+       MAIN CONTENT
+  ─────────────────────────────────────────────────────────────────────────── -->
+  <main class="container">
+    <!-- ======================
+         INTRODUCTION SECTION
+         ====================== -->
+    <div class="section-backdrop">
+      <h2>INTRODUCTION:</h2>
+      <p>
+        Artificial Immune Systems (AIS) are computational models inspired by the human immune
+        system’s ability to detect and respond to pathogens. AIS algorithms have been effectively
+        applied in various domains, including cybersecurity, anomaly detection, and data clustering.
+      </p>
+    </div>
+
+    <!-- ======================
+         INTRUSION DETECTION BLOCK
+         ====================== -->
+   <div class="section-backdrop">
+      <div class="row">
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+          <h2>INTRUSION DETECTION</h2>
+          <p>
+            AIS-based Intrusion Detection Systems (IDS) leverage the immune system’s
+            self/non-self discrimination to identify unauthorized access or anomalies in
+            network traffic. Techniques like the Negative Selection Algorithm (NSA)
+            enable the detection of novel threats without prior knowledge of attack patterns.
+          </p>
+          <h3>CASE STUDY</h3>
+          <p>
+            A study by Shen et al. (2012) implemented an AIS-based IDS using Rough Set theory,
+            achieving improved detection accuracy on the KDD CUP 99 dataset.
+          </p>
+            <a href="https://www.scirp.org/journal/paperinformation?paperid=17496"class="btn-primary">
+              READ MORE
+            </a>
+        </div>
+
+    
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+          <h3>PARAMETER SENSITIVITY IN AIS-BASED INTRUSION DETECTION (SHEN ET AL.)</h3>
+          <img
+            src="images/Image-applications-A.png"
+            alt="Parameter Sensitivity Graph"
+            class="responsive-img"
+          />
+          <p>
+            This graph from Shen et al. (2012) shows how different parameter weights impact the
+            detection accuracy of an AIS-based intrusion detection system. By emulating the immune
+            system’s self/non-self discrimination, this approach uses rough set theory to improve
+            parameter selection, significantly enhancing true negative rates while maintaining
+            high true positive rates.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================
+         ANOMALY DETECTION BLOCK
+         ====================== -->
+    <div class="section-backdrop">
+      <div class="row">
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+          <h2>ANOMALY DETECTION</h2>
+          <p>
+            AIS algorithms are adept at identifying anomalies by modeling normal behavior and
+            detecting deviations. The Dendritic Cell Algorithm (DCA), inspired by the Danger Theory,
+            processes multiple signals to detect anomalies in real-time.
+          </p>
+          <h3>CASE STUDY</h3>
+          <p>
+            Greensmith et al. (2010) applied the DCA for real-time anomaly detection,
+            demonstrating its effectiveness in identifying port scans.
+          </p>
+          <a href="https://arxiv.org/abs/1001.2411"class="btn-primary">
+              READ MORE
+            </a>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+          <h3>DCA: BRIDGING THE IMMUNE SYSTEM AND ANOMALY DETECTION IN NETWORKS</h3>
+          <img
+            src="images/Image-applications-B.png"
+            alt="DCA Infographic"
+            class="responsive-img"
+          />
+          <p>
+            This infographic highlights the parallels between the immune system’s ability to identify
+            antigens using dendritic cells and how the Dendritic Cell Algorithm (DCA) models normal
+            and abnormal network behaviors. Just as mutation and selection help the immune system
+            refine its defense, DCA processes multiple signals to detect deviations in real-time.
+            The approach, validated by Greensmith et al. (2010), demonstrates how AIS principles can
+            identify port scans and other anomalies in computer networks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================
+         DATA CLUSTERING BLOCK
+         ====================== -->
+    <div class="section-backdrop">
+      <div class="row">
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+          <h2>DATA CLUSTERING</h2>
+          <p>
+            AIS approaches to data clustering, such as the Artificial Immune Network (aiNet),
+            utilize immune network theories to cluster data without prior knowledge of the number
+            of clusters. These methods are particularly useful in unsupervised learning scenarios.
+          </p>
+          <h3>CASE STUDY</h3>
+          <p>
+            Deng et al. (2020) proposed an artificial immune network clustering algorithm based
+            on a cultural algorithm, enhancing clustering performance in wireless communications.
+          </p>
+          <a href="https://jwcn-eurasipjournals.springeropen.com/articles/10.1186/s13638-020-01779-1"class="btn-primary">
+              READ MORE
+            </a>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+          <h3>CAINET: INTEGRATING IMMUNE AND CULTURAL ALGORITHMS FOR ENHANCED DATA CLUSTERING</h3>
+          <img
+            src="images/Image-applications-C.png"
+            alt="CaiNet Clustering Figure"
+            class="responsive-img"
+          />
+          <p>
+            Figure 2 from Deng et al. (2020) illustrates how the Cultural Artificial Immune Network
+            (CaiNet) algorithm groups similar data points together. Just like the immune system
+            recognizes patterns and adapts to new threats, this approach helps find natural groupings
+            in data without knowing how many groups there are beforehand.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LESSON NAVIGATION / FORWARD BUTTON -->
+    <div class="forward-button-container">
+      <a href="interactive-demo.html" class="btn-forward">
+        LESSON 4: INTERACTIVE DEMO »»»
+      </a>
+    </div>
+  </main>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────── 
+       FOOTER  (same as all other pages)
+  ─────────────────────────────────────────────────────────────────────────── -->
+   <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo-block">
+        <span class="footer-logo-text">learnAIS.com</span>
+        <p class="footer-tagline">AN INTRODUCTION TO AIS AND BIO-INSPIRED COMPUTING</p>
+      </div>
+      <div class="footer-quicklinks">
+        <h3>QUICK LINKS</h3>
+        <ul>
+         <li><a href="index.html">HOME</a></li> 
+         <li><a href="about-the-course.html">ABOUT THE COURSE</a></li>
+          <li><a href="what-is-ais.html">WHAT IS AIS?</a></li>
+          <li><a href="how-csa-works.html">HOW CSA WORKS</a></li>
+          <li><a href="applications.html">APPLICATIONS</a></li>
+          <li><a href="interactive-demo.html">INTERACTIVE DEMO</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>ABOUT THIS PROJECT</h3>
+
+        <p>
+          An educational website developed as a
+          graduate computer science course project.
+        </p>
+
+        <p>
+          <a href="https://avenpacha.github.io/">
+            View Developer Portfolio
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+</body>
+</html>
